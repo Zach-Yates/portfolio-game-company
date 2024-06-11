@@ -1,0 +1,36 @@
+.storebutton{
+    width: 180px;
+    height: 60px;
+    background: black;
+    border-radius: 10px;
+    border: rgb(117, 117, 117) solid;
+
+    display: flex;
+    align-items: center;
+}
+
+.storebutton img{
+    margin: 0px 7px 0px 7px;
+    width:35px;
+}
+
+.storebutton .words{
+    display: block;
+}
+
+.storebutton p{
+    color: white;
+    font-size: .8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.storebutton h3{
+    color: white;
+    margin: 0px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+

@@ -1,0 +1,27 @@
+.qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.code{
+    width: 200px;
+}
+
+.code-text-border{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(112, 112, 112, 0.5);
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.code-text-border h4{
+    font-size: .9rem;
+    font-weight: 300;
+}

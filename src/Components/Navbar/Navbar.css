@@ -1,0 +1,126 @@
+.game__navbar{
+    height: 75px;
+    width:95%;
+    background: rgba(34, 35, 54, 0.85);
+    border-radius: 10px;
+
+    top: 15px;
+    left: 2.5%;
+    position: fixed;
+    padding: 0%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.game__navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.game__navbar li{
+    list-style: none;
+    margin: 5px 3px;
+    font-size: 16px;
+}
+
+.item{
+    padding: 15px 15px;
+}
+
+.item:hover{
+    border-radius: 10px;
+    background: rgba(85, 89, 159, 0.85);
+}
+
+.left .logo:hover{
+    scale: 1.2;
+}
+
+.left li, .right li{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.game__navbar li img{
+    width: 50px;
+}
+
+.game__navbar .scroller{
+    cursor: pointer;
+}
+
+.hide-scroller{
+    display: none;
+}
+
+.menu-icon, .mail-icon{
+    display: none;
+}
+
+
+@media(max-width: 1200px){
+    .nav-combattle{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .game__navbar{
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        border-radius: 0px;
+    }
+
+    .menu-icon, .mail-icon{
+        display: block;
+        width: 100px;
+        height: 30px;
+        color: white;
+        margin: 20px 0px;
+    }
+
+    .left{
+        position: fixed;
+        width: 40%;
+        padding-top: 70px;
+        flex-direction: column;
+        justify-content: left;
+        z-index: -1;
+        top:0px;
+        left: 0px;
+        bottom: 0px;
+        background: rgba(69, 73, 142, 0.85);
+        transition: 0.5s;
+    }
+
+    .right{
+        position: fixed;
+        width: 40%;
+        padding-top: 70px;
+        flex-direction: column;
+        z-index: -1;
+        top:0px;
+        right: 0px;
+        bottom: 0px;
+        background: rgba(69, 73, 142, 0.85);
+        transition: 0.5s;
+    }
+
+    .right li{
+        margin: 25px 0px;
+    }
+
+    .hide-nav-menu{
+        left: -1000px;
+    }
+
+    .hide-mail-menu{
+        right: -1000px;
+    }
+
+}

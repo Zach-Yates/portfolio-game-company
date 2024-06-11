@@ -1,0 +1,7 @@
+.combattlemain{
+    height: 100vh;
+    background-image: url(../../../../assets/game-bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
