@@ -1,9 +1,9 @@
 import React from 'react'
 import './PjMain.css'
 import GameBg from '../GameBg/GameBg'
-import bgimage from '../../../../assets/lblue-bg.png'
-import gameimage from '../../../../assets/pj-game-icon.png'
-import qrcode from '../../../../assets/pj-qr.svg'
+import bgimage from '../../assets/lblue-bg.png'
+import gameimage from '../../assets/pj-game-icon.png'
+import qrcode from '../../assets/pj-qr.svg'
 
 const PjMain = () => {
   return (

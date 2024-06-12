@@ -1,8 +1,8 @@
 import React from 'react'
 import './GameBg.css'
 import StoreButton from '../StoreButtons/StoreButton'
-import apple_logo from '../../../../assets/apple-icon.svg'
-import google_logo from '../../../../assets/google-play.svg'
+import apple_logo from '../../assets/apple-icon.svg'
+import google_logo from '../../assets/google-play.svg'
 import QrCode from '../QrCode/QrCode'
 
 const GameBg = (props) => {

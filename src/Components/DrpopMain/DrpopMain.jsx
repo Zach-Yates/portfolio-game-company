@@ -1,9 +1,9 @@
 import React from 'react'
 import './DrpopMain.css'
 import GameBg from '../GameBg/GameBg'
-import bgimage from '../../../../assets/blue-bg.png'
-import gameimage from '../../../../assets/drpop-game-icon.png'
-import qrcode from '../../../../assets/drpop-qr.svg'
+import bgimage from '../../assets/blue-bg.png'
+import gameimage from '../../assets/drpop-game-icon.png'
+import qrcode from '../../assets/drpop-qr.svg'
 
 const DrpopMain = () => {
   return (

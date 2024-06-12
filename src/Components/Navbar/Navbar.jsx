@@ -49,9 +49,9 @@ const Navbar = () => {
       <VscMenu className='menu-icon' onClick={toggleNavMenu}/>
 
       <ul className={`left ${navMenu? '':'hide-nav-menu'}`}>
-        <Link to='/'> <li><div className='item'>Zach.dev</div></li></Link>
+        {/* <Link to='/'> <li><div className='item'>Zach.dev</div></li></Link> */}
 
-        <Link to='/gameHome'> <li> <img src={game_company_logo} className='logo'/> </li> </Link>
+        <Link to='/portfolio-game-company/'> <li> <img src={game_company_logo} className='logo'/> </li> </Link>
 
         <Link to='/Game_Drpop'> <li><div className='item'>Dragon Rank Pop</div></li></Link>
         <Link to='/Game_Dr'> <li><div className='item'>Dragon Rank</div></li></Link>

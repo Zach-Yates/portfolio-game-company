@@ -10,10 +10,10 @@ import{BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 const Home = () => {
   return (
     <div className='gamehome'>
-    <Navbar/>
-    <Hero/>
-    <Games/>
-    <Footer/>
+      <Navbar/>
+      <Hero/>
+      <Games/>
+      <Footer/>
     </div>
   )
 }

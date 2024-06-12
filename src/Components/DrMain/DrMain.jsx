@@ -1,9 +1,9 @@
 import React from 'react'
 import './DrMain.css'
 import GameBg from '../GameBg/GameBg'
-import bgimage from '../../../../assets/black-bg.png'
-import gameimage from '../../../../assets/dr-game-icon.png'
-import qrcode from '../../../../assets/dr-qr.svg'
+import bgimage from '../../assets/black-bg.png'
+import gameimage from '../../assets/dr-game-icon.png'
+import qrcode from '../../assets/dr-qr.svg'
 
 const DrMain = () => {
   return (

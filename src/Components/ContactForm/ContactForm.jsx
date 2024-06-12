@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './ContactForm.css'
-import white_arrow from '../../../../assets/chevron-right.svg'
+import white_arrow from '../../assets/chevron-right.svg'
 
 const ContactForm = () => {
 

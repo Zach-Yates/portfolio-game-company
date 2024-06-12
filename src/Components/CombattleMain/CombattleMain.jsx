@@ -1,9 +1,9 @@
 import React from 'react'
 import './CombattleMain.css'
 import GameBg from '../GameBg/GameBg'
-import bgimage from '../../../../assets/red-bg.png'
-import gameimage from '../../../../assets/combattle-game-icon.png'
-import qrcode from '../../../../assets/combattle-qr.svg'
+import bgimage from '../../assets/red-bg.png'
+import gameimage from '../../assets/combattle-game-icon.png'
+import qrcode from '../../assets/combattle-qr.svg'
 
 const CombattleMain = () => {
   return (
