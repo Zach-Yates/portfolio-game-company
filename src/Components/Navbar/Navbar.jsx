@@ -1,6 +1,6 @@
 import './Navbar.css'
 
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import {Link as Scroll} from 'react-scroll'
 
@@ -12,14 +12,18 @@ import game_company_logo from '../../assets/game-company-logo.png'
 const Navbar = () => {
 
   const [navMenu, setNavMenu] = useState(false);
+  const location = useLocation();
+
+  let home = false;
+
   const toggleNavMenu = ()=>{
-    console.log("clicked");
+    // console.log("clicked");
     setNavMenu(!navMenu);
   }
 
   const [mailMenu, setMailMenu] = useState(false);
   const toggleMailMenu = ()=>{
-    console.log("clicked");
+    // console.log("clicked");
     setMailMenu(!mailMenu);
   }
 
@@ -28,21 +32,12 @@ const Navbar = () => {
     if(mailMenu){setMailMenu(false);}
   }
 
-  const [isHome, setIsHome] = useState(true);
-  const location = useLocation();
-  const CheckIsHome = () =>{
-    // console.log(location.pathname);
-    if (location.pathname != "/gameHome"){
-      setIsHome(false);
-    }
-    // console.log("is home: " + isHome);
+  if(location.pathname == "/portfolio-game-company/"){
+    home = true;
+  }else{
+    home = false;
   }
-  // // const {loc} = Breadcrumbs;
 
-  useEffect(()=>{
-    // console.log(loc);
-    CheckIsHome();
-  },)
 
   return (
     <nav className='game__navbar' onClick={HideMenus}>
@@ -61,7 +56,7 @@ const Navbar = () => {
       </ul>
 
       <ul className={`right ${mailMenu? '':'hide-mail-menu'}`}>
-        <Scroll to='games' smooth={true} offset={0} duration={500}><li className={`scroller ${isHome? '':'hide-scroller'}`}><div className='item'>Games</div></li></Scroll>
+        <Scroll to='games' smooth={true} offset={0} duration={500}><li className={`scroller ${home? '':'hide-scroller'}`}><div className='item'>Games</div></li></Scroll>
 
         <Link to='/Game_About'> <li><div className='item'>About</div></li></Link> 
 

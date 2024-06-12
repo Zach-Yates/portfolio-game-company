@@ -29,17 +29,6 @@
     margin-bottom: 50px;
 }
 
-.indicator{
-    width: 50px;
-    height: 10px;
-    background: rgb(0, 0, 0);
-    border-radius: 10px;
-}
-
-.active{
-    background: rgb(255, 255, 255);
-}
-
 .back-btn{
     right: auto;
     left: 5.5%;
@@ -64,89 +53,9 @@
     gap: 30px;
     transform: translateX(calc(var(--slider-index)*-92.5%));
     transition: 0.5s;
-    /* width: calc(100% - 2 * var(--slider-padding)); */
-    /* margin-left: 140px; */
     margin-left: 7%;
 }
 
-.card{
-    flex: 0 0 91%;
-    /* width: 1500px; */
-    height: 725px;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-    background-size: 1600px 725px;
-}
-
-.game__hero .info{
-    display: flex;
-    align-items:start;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-}
-
-
-
-.card__title, .card__desc, .card__button{
-    margin-left: 150px;
-}
-
-.card__logo{
-    margin-left: 175px;
-    margin-bottom: 20px;
-}
-
-.card__title{
-    color: white;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
-
-.card__desc{
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-style: bold;
-    margin-bottom: 20px;
-}
-
-.card__button{
-    width: 250px;
-    height: 100px;
-    background-color:  rgb(11, 121, 255);
-    color: white;
-    font-size: 1.6rem;
-    font-style: bold;
-    border-radius: 100px;
-    font-weight: 500;
-    border-color: rgb(77, 210, 255);
-    border-style: solid;
-    text-shadow: black 0px 1px 2px;
-}
-
-.card__button:hover{
-    scale: 1.1;
-    background-color:  rgb(73, 153, 251);
-}
-
-
-.card1{
-    background-image: url("../../assets/drpop-bg.png");
-}
-
-.card2{
-    background-image: url("../../assets/dr-bg.png");
-}
-
-.card3{
-    background-image: url("../../assets/pj-bg.png");
-}
-
-.card4{
-    background-image: url("../../assets/combattle-bg.png");
-}
 
 
 @media(max-width: 1000px){
@@ -157,45 +66,9 @@
         transform: translateX(calc(var(--slider-index)*-100%));
 
     }
-    .card{
-        flex: 0 0 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 100% 100%;
-        text-align: center;
-    }
 
     .next-btn, .back-btn{
         display: none;
-    }
-    .card__title, .card__desc, .card__button{
-        margin-left: 0px;
-    }
-    .card__logo{
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-
-    .game__hero .info{
-        align-items:center;
-        width: 50%;
-    }
-
-    .card1{
-        background-image: url("../../assets/drpop-bg2.png");
-    }
-    
-    .card2{
-        background-image: url("../../assets/dr-bg2.png");
-    }
-    
-    .card3{
-        background-image: url("../../assets/pj-bg2.png");
-    }
-    
-    .card4{
-        background-image: url("../../assets/combattle-bg2.png");
     }
 }
 
