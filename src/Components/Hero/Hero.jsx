@@ -14,8 +14,6 @@ import combattle_logo from '../../assets/combattle-logo.png'
 
 
 
-
-
 const Hero = () => {
     const [sliderIndex,setSliderIndex] = useState(0);
 
@@ -34,7 +32,6 @@ const Hero = () => {
                 return cur =0;
             });
         }
-        // console.log("Next");
     };
 
     const slideBackward = ()=>{
@@ -47,14 +44,13 @@ const Hero = () => {
                 return cur = 3;
             });
         }
-        // console.log("Back");
     };
 
   return (
     <div className='game__hero'>
 
-        <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
-        <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
+        <button className='next-btn' onClick={slideForward}><img src={next_icon}/></button>
+        <button className='back-btn' onClick={slideBackward}><img src={back_icon}/></button>
 
         <div className='cards'>
 

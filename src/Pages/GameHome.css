@@ -1,3 +1,4 @@
 .gamehome{
     background-image: url(../assets/game-bg.png);
+    background-size: cover;
 }
