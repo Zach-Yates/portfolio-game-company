@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import './ContactForm.css'
 import white_arrow from '../../assets/chevron-right.svg'
+import bgimage from '../../assets/game-bg.png'
+
 
 const ContactForm = () => {
 
@@ -32,7 +34,7 @@ const ContactForm = () => {
 
 
   return (
-    <div className='contactForm'>
+    <div className='contactForm' style = {{backgroundImage: `url(${bgimage})`}}>
       <div className='form-bg'>
 
         <h1>Say Hello!</h1>
@@ -48,7 +50,6 @@ const ContactForm = () => {
         </form>
 
       </div>
-
     </div>
   )
 }
